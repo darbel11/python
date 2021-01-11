@@ -30,7 +30,7 @@ def search(pat, txt, q):
             j += 1
 
             if j == M:
-                print("Pattern found at index " + str(i))
+                print(str(i))
 
         if i < N - M:
 
