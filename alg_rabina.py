@@ -1,7 +1,7 @@
 d = 256
 
 def search(pat, txt, q):
-
+    s = []
     M = len(pat)
     N = len(txt)
     i = 0
@@ -30,7 +30,7 @@ def search(pat, txt, q):
             j += 1
 
             if j == M:
-                print("Pattern found at index " + str(i))
+                s.append(i)
 
         if i < N - M:
 
@@ -38,6 +38,6 @@ def search(pat, txt, q):
 
             if t < 0:
                 t = t + q
-
+    print(s)
 if __name__ == '__main__':
     search("cat", "my cat loves playing with other cats", 101)
