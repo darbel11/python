@@ -1,6 +1,5 @@
-d = 256
-
 def search(pat, txt, q):
+    d = 256
     s = []
     M = len(pat)
     N = len(txt)
@@ -9,7 +8,6 @@ def search(pat, txt, q):
     p = 0
     t = 0
     h = 1
-
 
     for i in range(M - 1):
         h = (h * d) % q
@@ -39,5 +37,7 @@ def search(pat, txt, q):
             if t < 0:
                 t = t + q
     print(s)
+
+
 if __name__ == '__main__':
     search("cat", "my cat loves playing with other cats", 101)
