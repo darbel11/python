@@ -1,5 +1,5 @@
 
-print ( 'Input one number' )
+print ( 'Введите число для проверки на простоту' )
 print()
 a = int (input () )
 
@@ -14,4 +14,4 @@ def isNumberPrime(n):
 
 b = isNumberPrime(a)
 print()
-print(a, 'Is prime number:',b)
+print(b)
