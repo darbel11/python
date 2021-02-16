@@ -1,15 +1,17 @@
-import random
 
+print ( 'Input one number' )
+print()
+a = int (input () )
 
-def checking(n: int) -> bool:
-    if n >= 0:
-        a = random.randint(1, int(n) - 1)
-        if pow(a, int(n) - 1, mod=int(n)) == 1:
-            # print('Число является простым')
-            return True
-        else:
-            # print('Число не является простым')
-            return False
+def isNumberPrime(n):
+    if n % 2 == 0:
+        return n == 2
+    else:
+        x = 3
+        while x * x <= n and n % x != 0:
+            x += 2
+        return x * x > n
 
-
-checking(int(input('Введите число, которое нужно проверить на простоту: ')))
+b = isNumberPrime(a)
+print()
+print(a, 'Is prime number:',b)
