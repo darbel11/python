@@ -9,10 +9,10 @@ def is_number_prime(number):
 
 
 if __name__ == '__main__':
-    user_input = int(input('Input integer: '))
+    user_input = int(input('Введите значение: '))
     simplicity = is_number_prime(user_input)
 
     if simplicity:
-        print('Inputed number {} is prime'.format(user_input))
+        print('Введенное число {} простое'.format(user_input))
     else:
-        print('Inputed number {} isn\'t prime'.format(user_input))
+        print('Введенное число {} составное'.format(user_input))
