@@ -1,3 +1,4 @@
+from import_modul1 import is_number_prime
 user_input = int(input('Введите значение: '))
 simplicity = is_number_prime(user_input)
 
