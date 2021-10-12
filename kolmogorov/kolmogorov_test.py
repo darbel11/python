@@ -20,4 +20,4 @@ print(stats.kstest(data_frame["value"],
                    (data_frame["value"].mean(), data_frame["value"].std()),
                    N=len(data_frame["value"])
                    ))
-# Кажется, распределние близко к нормальному, т.к P-значение велико
+# Кажется, распределение близко к нормальному, т.к P-значение велико
